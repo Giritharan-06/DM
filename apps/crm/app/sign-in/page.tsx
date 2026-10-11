@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { createAuthClient } from 'better-auth/react';
+import { authClient } from '@/lib/auth-client';
 import { Button } from '@zyroz/ui';
 import { ArrowUpRight, ShieldCheck } from 'lucide-react';
 export default function SignIn() {
@@ -40,7 +40,7 @@ export default function SignIn() {
             setError('');
             const form = new FormData(e.currentTarget);
             try {
-              const result = await createAuthClient().signIn.email({
+              const result = await authClient.signIn.email({
                 email: String(form.get('email')),
                 password: String(form.get('password')),
               });

@@ -17,9 +17,31 @@ function createAuth() {
     throw new Error(
       'Configure a random BETTER_AUTH_SECRET of at least 32 characters.',
     );
+  const hosts = new Set([
+    new URL(
+      process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000',
+    ).host,
+    new URL(
+      process.env.NEXT_PUBLIC_CRM_URL || 'http://localhost:3001',
+    ).host,
+    'localhost:3001',
+  ]);
+  for (const host of [
+    process.env.VERCEL_URL,
+    process.env.VERCEL_BRANCH_URL,
+    process.env.VERCEL_PROJECT_PRODUCTION_URL,
+  ]) {
+    if (host) hosts.add(host);
+  }
   return betterAuth({
     secret: process.env.BETTER_AUTH_SECRET,
-    baseURL: process.env.BETTER_AUTH_URL,
+    baseURL: {
+      allowedHosts: [...hosts],
+      ...(process.env.VERCEL
+        ? {}
+        : { fallback: process.env.BETTER_AUTH_URL || 'http://localhost:3001' }),
+    },
+    basePath: '/api/auth',
     database: drizzleAdapter(db(), {
       provider: 'pg',
       schema: {
@@ -35,9 +57,6 @@ function createAuth() {
       disableSignUp: true,
       minPasswordLength: 12,
     },
-    trustedOrigins: [
-      process.env.NEXT_PUBLIC_CRM_URL || 'http://localhost:3001',
-    ],
     session: { expiresIn: 604800, updateAge: 86400 },
     advanced: {
       useSecureCookies: process.env.NODE_ENV === 'production',

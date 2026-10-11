@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import { canAccess, type Module, type Role } from "@zyroz/auth/permissions";
 import { useUI } from "@/lib/ui-store";
-import { createAuthClient } from "better-auth/react";
+import { authClient } from "@/lib/auth-client";
 import { WorkspaceUser } from "@/lib/workspace-user";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
@@ -135,9 +135,7 @@ export function Shell({
               <span className="promo-brand">✦ ZYROZ</span>
             </div>
             <a
-              href={
-                process.env.NEXT_PUBLIC_WEBSITE_URL || "http://localhost:3000"
-              }
+              href={process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000'}
               className="website-link"
               target="_blank"
               rel="noreferrer"
@@ -159,7 +157,7 @@ export function Shell({
                 aria-label="Sign out"
                 disabled={preview}
                 onClick={async () => {
-                  await createAuthClient().signOut();
+                  await authClient.signOut();
                   router.push("/sign-in");
                   router.refresh();
                 }}

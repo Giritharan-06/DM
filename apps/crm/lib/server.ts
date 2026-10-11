@@ -118,10 +118,7 @@ export async function audit(
     .values({ actorId: actor.id, action, entity, entityId });
 }
 export function checkOrigin(req: Request) {
-  if (
-    req.headers.get('origin') !==
-    (process.env.NEXT_PUBLIC_CRM_URL || 'http://localhost:3001')
-  )
+  if (req.headers.get('origin') !== new URL(req.url).origin)
     throw new ApiError(403, 'Invalid request origin.');
 }
 export async function limitMutation(actor: Actor) {
