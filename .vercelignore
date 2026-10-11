@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.git
+.vercel
+node_modules
+.next
+.turbo
+artifacts
+test-results
+playwright-report
+CRM.png
+landing page.png

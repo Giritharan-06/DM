@@ -7,4 +7,5 @@ apps/*/.env.local
 playwright-report/
 test-results/
 artifacts/
+.vercel/
 *.tsbuildinfo
