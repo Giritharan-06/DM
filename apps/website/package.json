@@ -1,0 +1,35 @@
+{
+  "name": "@zyroz/website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@zyroz/ui": "workspace:*",
+    "@zyroz/database": "workspace:*",
+    "@zyroz/validation": "workspace:*",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "@tailwindcss/postcss": "4.3.3",
+    "gsap": "3.15.0",
+    "motion": "14.0.0",
+    "three": "0.186.1",
+    "@react-three/fiber": "9.8.1",
+    "@react-three/drei": "10.7.9",
+    "react-hook-form": "7.89.0",
+    "@hookform/resolvers": "5.9.1",
+    "lucide-react": "1.52.0",
+    "drizzle-orm": "0.45.3",
+    "zod": "4.6.5",
+    "dotenv": "18.0.6",
+    "@fontsource/plus-jakarta-sans": "5.3.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.186.0"
+  }
+}

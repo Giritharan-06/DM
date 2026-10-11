@@ -1,0 +1,5 @@
+{
+  "extends": "./packages/config/tsconfig.json",
+  "compilerOptions": { "paths": { "@/*": ["./apps/crm/*"] } },
+  "include": ["scripts/**/*.ts", "tests/**/*.ts", "*.config.ts"]
+}

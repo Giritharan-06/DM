@@ -1,0 +1,15 @@
+{
+  "name": "@zyroz/auth",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./permissions": "./src/permissions.ts"
+  },
+  "dependencies": {
+    "@zyroz/database": "workspace:*",
+    "better-auth": "1.7.7",
+    "@better-auth/drizzle-adapter": "1.7.7",
+    "server-only": "0.0.1"
+  }
+}

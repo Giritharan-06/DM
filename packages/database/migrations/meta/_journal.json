@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791480772424,
+      "tag": "0000_flippant_zaladane",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791481691406,
+      "tag": "0001_talented_gateway",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791482897236,
+      "tag": "0002_moaning_taskmaster",
+      "breakpoints": true
+    }
+  ]
+}
