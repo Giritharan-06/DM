@@ -177,6 +177,16 @@ p {
   letter-spacing: -4px;
   padding-right: 4px;
 }
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+  flex: none;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #e8e5f8;
+  border-radius: 12px;
+}
 .container {
   max-width: 1240px;
   margin: auto;

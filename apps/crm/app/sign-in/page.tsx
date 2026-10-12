@@ -1,9 +1,11 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { authClient } from '@/lib/auth-client';
 import { Button } from '@zyroz/ui';
 import { ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { websiteUrl } from '@/lib/website-url';
 export default function SignIn() {
   const router = useRouter();
   const [error, setError] = useState('');
@@ -12,10 +14,11 @@ export default function SignIn() {
     <div className="auth-page">
       <div className="auth-brand">
         <a
-          href={process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000'}
+          href={websiteUrl}
           className="logo"
         >
-          <span className="logo-mark">z</span>zyroz.
+          <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+          <span>Zyroz Digital</span>
         </a>
         <div>
           <div className="eyebrow">Your agency, connected</div>
@@ -29,7 +32,7 @@ export default function SignIn() {
             people, clients and possibilities together.
           </p>
         </div>
-        <p style={{ fontSize: 11 }}>ZYROZ Agency Workspace</p>
+        <p style={{ fontSize: 11 }}>Zyroz Digital Workspace</p>
       </div>
       <div className="auth-form-wrap">
         <form

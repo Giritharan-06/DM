@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 export default function Privacy() {
   return (
     <main className="legal" id="main">
       <Link className="logo" href="/">
-        zyroz.
+        <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+        <span>Zyroz Digital</span>
       </Link>
       <h1 style={{ marginTop: 35 }}>Privacy policy</h1>
       <p>
@@ -37,7 +39,7 @@ export default function Privacy() {
         records. Access controls, encrypted provider connections and server-side
         validation help protect information.
       </p>
-      <Link href="/">← Return to ZYROZ</Link>
+      <Link href="/">← Return to Zyroz Digital</Link>
     </main>
   );
 }

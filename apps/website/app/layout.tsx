@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000',
   ),
-  title: 'ZYROZ — Your next chapter of growth',
+  title: 'Zyroz Digital — Your next chapter of growth',
   description:
-    'Smart digital marketing for ambitious businesses. Explore strategy, creative, advertising and websites with ZYROZ.',
+    'Smart digital marketing for ambitious businesses. Explore strategy, creative, advertising and websites with Zyroz Digital.',
   openGraph: {
     title: 'Grow Your Business in the Digital World.',
     description:

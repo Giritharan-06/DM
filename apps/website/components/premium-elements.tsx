@@ -88,7 +88,7 @@ export function SocialLinks({
               href={profile[brand]}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`ZYROZ on ${brand}`}
+              aria-label={`Zyroz Digital on ${brand}`}
               className={`social-link social-${brand}`}
             >
               <BrandIcon brand={brand} />
@@ -373,10 +373,10 @@ export function ContactDock({ profile }: { profile: WebsiteSettings }) {
         {number ? (
           <a
             className="whatsapp-button"
-            href={`https://wa.me/${number}?text=${encodeURIComponent('Hi ZYROZ, I’d like to discuss digital marketing for my business.')}`}
+            href={`https://wa.me/${number}?text=${encodeURIComponent('Hi Zyroz Digital, I’d like to discuss digital marketing for my business.')}`}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Chat with ZYROZ on WhatsApp"
+            aria-label="Chat with Zyroz Digital on WhatsApp"
           >
             <BrandIcon brand="whatsapp" />
             <span>Let’s talk</span>

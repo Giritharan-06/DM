@@ -1,11 +1,11 @@
 body {
   background:
-    radial-gradient(ellipse at 40% 0, #e6eaff, transparent 50%),
-    linear-gradient(135deg, #f4f0ff, #edf6ff);
-  --purple: #7049ff;
-  --ink: #10132c;
-  --muted: #727d99;
-  --line: #e5e5f9;
+    radial-gradient(ellipse at 40% 0, #e7e1ff, transparent 50%),
+    linear-gradient(135deg, #fbfaff, #f5faff);
+  --purple: #7047ff;
+  --ink: #10132a;
+  --muted: #69728c;
+  --line: #e8e5f8;
 }
 .crm-shell {
   padding: 9px;
@@ -16,12 +16,19 @@ body {
   border: 1px solid #fff;
   border-radius: 19px;
   padding: 24px 13px 0;
-  background: linear-gradient(180deg, #ffffffee, #f7f8ffdd);
+  background: linear-gradient(180deg, #ffffffee, #f6f8ffeb);
   box-shadow: 0 7px 24px #7165b00b;
 }
 .sidebar-brand {
   padding: 0 12px 16px;
 }
+.sidebar-brand .logo {
+  font-size: 16px;
+  letter-spacing: -0.055em;
+  gap: 7px;
+  white-space: nowrap;
+}
+.sidebar-brand .brand-icon { width: 36px; height: 36px; border-radius: 10px; }
 .logo-mark {
   background: linear-gradient(140deg, #6579ff, #903aff);
   box-shadow:
@@ -50,7 +57,7 @@ body {
 }
 .sidebar-link.active {
   color: white;
-  background: linear-gradient(110deg, #7751ff, #5446fa);
+  background: linear-gradient(110deg, #4e63ff, #8d42ff);
   box-shadow: 0 5px 10px #7351ee30;
 }
 .sidebar-link.active .nav-dot {
@@ -74,7 +81,7 @@ body {
   width: calc(100% - 224px);
   border: 1px solid #ffffffdc;
   border-radius: 19px;
-  background: linear-gradient(155deg, #f9f9ffd9, #f3f7ffe0);
+  background: linear-gradient(155deg, #fbfaff, #f5faff);
   overflow: hidden;
 }
 .topbar {
@@ -125,7 +132,7 @@ body {
   border-radius: 8px;
 }
 .button.primary {
-  background: linear-gradient(110deg, #8260ff, #5f40fa);
+  background: linear-gradient(110deg, #4e63ff, #8d42ff);
   box-shadow: 0 5px 12px #7950ff25;
 }
 .topbar-user strong {
@@ -162,7 +169,7 @@ body {
   display: none;
 }
 .card {
-  border: 1px solid #e5e3fa;
+  border: 1px solid #e8e5f8;
   border-radius: 15px;
   box-shadow: 0 6px 16px #7a6ec510;
   background: #ffffffdb;
@@ -417,11 +424,11 @@ tbody tr:hover {
   font-size: 8px;
 }
 .auth-page {
-  background: linear-gradient(140deg, #f4f0ff, #f1f8ff);
+  background: linear-gradient(140deg, #fbfaff, #f5faff);
 }
 .auth-brand {
   position: relative;
-  background: radial-gradient(ellipse at 40% 35%, #e7dfff, #eff6ff);
+  background: radial-gradient(ellipse at 40% 35%, #e7e1ff, #d9eaff);
   overflow: hidden;
 }
 .auth-brand::before {

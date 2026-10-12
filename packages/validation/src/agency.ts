@@ -20,6 +20,6 @@ export const agencyProfileSchema = z.object({
   brandColor: z
     .string()
     .regex(/^#[0-9a-fA-F]{6}$/)
-    .default("#6c4dff"),
+    .default("#ed704b"),
 });
 export type AgencyProfile = z.infer<typeof agencyProfileSchema>;

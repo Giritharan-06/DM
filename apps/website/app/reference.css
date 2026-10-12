@@ -31,7 +31,14 @@ h3 {
   border: 0;
 }
 .logo {
-  letter-spacing: -1px;
+  letter-spacing: -0.06em;
+  color: #10132a;
+  white-space: nowrap;
+}
+.footer-grid .logo { display: inline-flex; }
+@media (max-width: 760px) {
+  .site-nav .logo { font-size: 19px; gap: 7px; }
+  .site-nav .brand-icon { width: 36px; height: 36px; }
 }
 .logo-mark {
   background: linear-gradient(140deg, #5672ff, #8f42ff);

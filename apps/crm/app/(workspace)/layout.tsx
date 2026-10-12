@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { auth } from '@zyroz/auth';
 import { db, userRoles } from '@zyroz/database';
 import { eq } from 'drizzle-orm';
 import { Shell } from '@/components/shell';
+import { websiteUrl } from '@/lib/website-url';
 export const dynamic = 'force-dynamic';
 export default async function Workspace({
   children,
@@ -14,7 +16,7 @@ export default async function Workspace({
   if (!process.env.DATABASE_URL || !process.env.BETTER_AUTH_SECRET)
     return (
       <div className="setup">
-        <span className="logo">zyroz.</span>
+        <span className="logo"><Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />Zyroz Digital</span>
         <h1>Your workspace is almost ready.</h1>
         <p>
           Configure DATABASE_URL and BETTER_AUTH_SECRET in the root .env, run
@@ -23,7 +25,7 @@ export default async function Workspace({
         </p>
         <a
           className="button primary"
-          href={process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000'}
+          href={websiteUrl}
         >
           Explore the website ↗
         </a>

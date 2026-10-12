@@ -136,9 +136,9 @@ export function Landing({ contact }: { contact: WebsiteSettings }) {
       <div className="scroll-progress" aria-hidden="true" />
       <header className="container site-header">
         <nav className="site-nav" aria-label="Main navigation">
-          <Link className="logo" href="/" aria-label="ZYROZ home">
-            <span className="logo-mark">z</span>zyroz
-            <span style={{ color: 'var(--purple)' }}>.</span>
+          <Link className="logo" href="/" aria-label="Zyroz Digital home">
+            <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+            <span>Zyroz Digital</span>
           </Link>
           <div className="nav-links">
             <a href="#services">Services</a>

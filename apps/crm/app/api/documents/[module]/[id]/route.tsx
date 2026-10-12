@@ -131,7 +131,7 @@ export async function GET(
               },
             ]}
           >
-            {profile("name") || "ZYROZ"}
+            {profile("name") || "Zyroz Digital"}
           </Text>
           {profile("address") && (
             <Text style={styles.muted}>{profile("address")}</Text>

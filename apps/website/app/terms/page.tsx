@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 export default function Terms() {
   return (
     <main className="legal" id="main">
       <Link className="logo" href="/">
-        zyroz.
+        <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+        <span>Zyroz Digital</span>
       </Link>
       <h1 style={{ marginTop: 35 }}>Terms & conditions</h1>
       <p>
@@ -28,7 +30,7 @@ export default function Terms() {
         abusive or automated submissions. External services may have their own
         terms.
       </p>
-      <Link href="/">← Return to ZYROZ</Link>
+      <Link href="/">← Return to Zyroz Digital</Link>
     </main>
   );
 }

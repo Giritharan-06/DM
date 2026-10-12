@@ -61,7 +61,7 @@ export function Consultation() {
         <CardArt name="unique-feature-success" />
         <h3>Your next chapter starts here.</h3>
         <p>
-          Your consultation enquiry has been received. The ZYROZ team can now
+          Your consultation enquiry has been received. The Zyroz Digital team can now
           review your business goals.
         </p>
       </div>

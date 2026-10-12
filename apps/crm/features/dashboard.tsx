@@ -211,11 +211,11 @@ export function Dashboard({
               <AreaChart data={d.growth}>
                 <defs>
                   <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#9077ff" stopOpacity={0.3} />
-                    <stop offset="100%" stopColor="#9077ff" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#ed704b" stopOpacity={0.3} />
+                    <stop offset="100%" stopColor="#ed704b" stopOpacity={0} />
                   </linearGradient>
                 </defs>
-                <CartesianGrid vertical={false} stroke="#f0eff5" />
+                  <CartesianGrid vertical={false} stroke="#e3e0d4" />
                 <XAxis
                   dataKey="name"
                   tick={{ fontSize: 9 }}
@@ -233,7 +233,7 @@ export function Dashboard({
                   isAnimationActive={false}
                   type="monotone"
                   dataKey="value"
-                  stroke="#9077ff"
+                  stroke="#c3492d"
                   fill="url(#area)"
                   strokeWidth={2}
                 />
@@ -266,7 +266,7 @@ export function Dashboard({
                   tickLine={false}
                 />
                 <Tooltip />
-                <Bar isAnimationActive={false} dataKey="value" fill="#a68ef5" radius={[0, 5, 5, 0]} />
+                <Bar isAnimationActive={false} dataKey="value" fill="#347c82" radius={[0, 5, 5, 0]} />
               </BarChart>
             </ResponsiveContainer>
           ) : (
@@ -301,11 +301,11 @@ export function Dashboard({
                         key={source.name}
                         fill={
                           [
-                            "#7956ff",
-                            "#48b8ff",
-                            "#2fd4ad",
-                            "#ffb457",
-                            "#e78bed",
+                            "#c3492d",
+                            "#347c82",
+                            "#458064",
+                            "#c88d40",
+                            "#8c6b58",
                           ][i % 5]
                         }
                       />
@@ -319,11 +319,11 @@ export function Dashboard({
                     <span
                       style={{
                         background: [
-                          "#7956ff",
-                          "#48b8ff",
-                          "#2fd4ad",
-                          "#ffb457",
-                          "#e78bed",
+                          "#c3492d",
+                          "#347c82",
+                          "#458064",
+                          "#c88d40",
+                          "#8c6b58",
                         ][i % 5],
                       }}
                     />
@@ -353,7 +353,7 @@ export function Dashboard({
                   <XAxis dataKey="name" tick={{ fontSize: 10 }} />
                   <YAxis tick={{ fontSize: 10 }} />
                   <Tooltip />
-                  <Bar isAnimationActive={false} dataKey="value" fill="#2fd4ad" radius={[6, 6, 0, 0]} />
+                  <Bar isAnimationActive={false} dataKey="value" fill="#458064" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             ) : (
@@ -528,7 +528,7 @@ export function Dashboard({
                 <XAxis dataKey="name" tick={{ fontSize: 10 }} />
                 <YAxis allowDecimals={false} tick={{ fontSize: 10 }} />
                 <Tooltip />
-                <Bar isAnimationActive={false} dataKey="value" fill="#7b5aff" radius={[6, 6, 0, 0]} />
+                <Bar isAnimationActive={false} dataKey="value" fill="#c3492d" radius={[6, 6, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           ) : (

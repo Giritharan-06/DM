@@ -12,14 +12,14 @@
   flex-wrap: wrap;
 }
 .crm-shell {
-  --purple: var(--brand, #7049ff);
+  --purple: var(--brand, #ed704b);
 }
 .crm-shell .button.primary,
 .crm-shell .sidebar-link.active {
   background: linear-gradient(
     110deg,
-    color-mix(in srgb, var(--brand, #7049ff), white 14%),
-    var(--brand, #7049ff)
+    color-mix(in srgb, var(--brand, #ed704b), white 14%),
+    var(--brand, #ed704b)
   );
 }
 .records-surface {

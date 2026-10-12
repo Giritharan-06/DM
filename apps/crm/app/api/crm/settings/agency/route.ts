@@ -16,7 +16,7 @@ async function handle(req: NextRequest) {
       return NextResponse.json({
         profile: profile.success
           ? profile.data
-          : agencyProfileSchema.parse({ name: "ZYROZ Agency" }),
+          : agencyProfileSchema.parse({ name: "Zyroz Digital" }),
         updatedAt: row?.updatedAt || null,
       });
     }

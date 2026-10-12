@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
@@ -28,6 +29,7 @@ import { authClient } from "@/lib/auth-client";
 import { WorkspaceUser } from "@/lib/workspace-user";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
+import { websiteUrl } from "@/lib/website-url";
 const nav: [Module, string, typeof Users][] = [
   ["dashboard", "Dashboard", LayoutDashboard],
   ["leads", "Leads", Users],
@@ -85,7 +87,8 @@ export function Shell({
         <aside className={`sidebar ${menu ? "open" : ""}`}>
           <div className="sidebar-brand">
             <Link href={`${basePath}/`} className="logo">
-              <span className="logo-mark">z</span>zyroz.
+              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={36} height={36} />
+              <span>Zyroz Digital</span>
             </Link>
             <span className="workspace-label">AGENCY WORKSPACE</span>
             <button
@@ -99,7 +102,9 @@ export function Shell({
           <div className="workspace-picker">
             <span className="workspace-avatar">Z</span>
             <div>
-              <strong>{profile.data?.profile.name || "ZYROZ Agency"}</strong>
+              <strong>{profile.data?.profile.name === "ZYROZ Agency"
+                ? "Zyroz Digital"
+                : profile.data?.profile.name || "Zyroz Digital"}</strong>
               <small>
                 {preview
                   ? "Read-only design preview"
@@ -132,15 +137,15 @@ export function Shell({
                 A little clarity.
                 <br />A lot of possibility.
               </strong>
-              <span className="promo-brand">✦ ZYROZ</span>
+              <span className="promo-brand">✦ Zyroz Digital</span>
             </div>
             <a
-              href={process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000'}
+              href={websiteUrl}
               className="website-link"
               target="_blank"
               rel="noreferrer"
             >
-              View ZYROZ website <ArrowUpRight size={15} />
+              View Zyroz Digital website <ArrowUpRight size={15} />
             </a>
             <div className="user-profile">
               <span className="avatar">
@@ -238,7 +243,7 @@ export function Shell({
             {children}
           </main>
           <footer className="crm-footer">
-            ZYROZ Workspace <span>A little clarity. A lot of possibility.</span>
+            Zyroz Digital Workspace <span>A little clarity. A lot of possibility.</span>
           </footer>
         </div>
       </div>

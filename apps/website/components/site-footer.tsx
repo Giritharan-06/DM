@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowUpRight, Mail, Phone, Sparkles } from 'lucide-react';
 import { serviceNames, type WebsiteSettings } from '@zyroz/validation';
 import { BrandIcon, SocialLinks } from './premium-elements';
@@ -31,7 +32,8 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <span className="logo-mark">z</span>zyroz.
+              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+              <span>Zyroz Digital</span>
             </Link>
             <p>
               A digital growth partner for ambitious businesses. We connect your
@@ -53,7 +55,7 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
             ))}
           </div>
           <div>
-            <h4>Discover ZYROZ</h4>
+            <h4>Discover Zyroz Digital</h4>
             <a href="#studio">The growth studio</a>
             <a href="#approach">Our approach</a>
             <a href="#process">How we work</a>
@@ -106,7 +108,7 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} ZYROZ. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Zyroz Digital. All rights reserved.</span>
           <div>
             <Link href="/privacy">Privacy policy</Link>
             <Link href="/terms">Terms & conditions</Link>
