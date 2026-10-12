@@ -16,7 +16,7 @@ export default async function Workspace({
   if (!process.env.DATABASE_URL || !process.env.BETTER_AUTH_SECRET)
     return (
       <div className="setup">
-        <span className="logo"><Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />Zyroz Digital</span>
+        <span className="logo"><Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />Zyroz Digital</span>
         <h1>Your workspace is almost ready.</h1>
         <p>
           Configure DATABASE_URL and BETTER_AUTH_SECRET in the root .env, run

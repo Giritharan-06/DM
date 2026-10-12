@@ -35,7 +35,6 @@ import {
   Building2,
   HeartPulse,
   Shirt,
-  Sparkles,
 } from 'lucide-react';
 import { Badge } from '@zyroz/ui';
 import { industries, serviceNames } from '@zyroz/validation';
@@ -137,7 +136,7 @@ export function Landing({ contact }: { contact: WebsiteSettings }) {
       <header className="container site-header">
         <nav className="site-nav" aria-label="Main navigation">
           <Link className="logo" href="/" aria-label="Zyroz Digital home">
-            <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+            <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />
             <span>Zyroz Digital</span>
           </Link>
           <div className="nav-links">
@@ -169,7 +168,7 @@ export function Landing({ contact }: { contact: WebsiteSettings }) {
             <div className="hero-grid">
               <div className="hero-copy">
                 <div className="eyebrow">
-                  <Sparkles size={12} /> STRATEGY. CREATIVE. PERFORMANCE.
+                  STRATEGY. CREATIVE. PERFORMANCE.
                 </div>
                 <h1>
                   Turn Your Business Into a <span>Growth Story.</span>

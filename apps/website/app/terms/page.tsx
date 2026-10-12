@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <main className="legal" id="main">
       <Link className="logo" href="/">
-        <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+        <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />
         <span>Zyroz Digital</span>
       </Link>
       <h1 style={{ marginTop: 35 }}>Terms & conditions</h1>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUpRight, Mail, Phone, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Mail, Phone } from 'lucide-react';
 import { serviceNames, type WebsiteSettings } from '@zyroz/validation';
 import { BrandIcon, SocialLinks } from './premium-elements';
 import { CardArt } from './card-art';
@@ -12,7 +12,7 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
         <div className="footer-invitation">
           <div>
             <span className="eyebrow">
-              <Sparkles size={13} /> YOUR NEXT CHAPTER
+              YOUR NEXT CHAPTER
             </span>
             <h2>
               Big ideas.
@@ -32,7 +32,7 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={44} height={44} />
+              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />
               <span>Zyroz Digital</span>
             </Link>
             <p>
@@ -43,7 +43,7 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
             <span className="footer-social-heading">Stay connected</span>
             <SocialLinks profile={contact} compact showUnconfigured />
             <div className="footer-brand-note">
-              <Sparkles size={14} /> Strategy. Creativity. Connection.
+              Strategy. Creativity. Connection.
             </div>
           </div>
           <div>

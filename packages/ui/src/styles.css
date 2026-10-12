@@ -178,23 +178,21 @@ p {
   padding-right: 4px;
 }
 .brand-icon {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   display: block;
   flex: none;
   object-fit: contain;
   background: transparent;
   border: 0;
-  transition: transform 220ms ease;
+  transition: filter 220ms ease;
 }
 .logo:hover .brand-icon,
 .logo:focus-visible .brand-icon {
-  transform: translateY(-3px) rotate(-5deg) scale(1.08);
+  filter: invert(56%) sepia(55%) saturate(1358%) hue-rotate(328deg) brightness(98%) contrast(89%);
 }
 @media (prefers-reduced-motion: reduce) {
   .brand-icon { transition: none; }
-  .logo:hover .brand-icon,
-  .logo:focus-visible .brand-icon { transform: none; }
 }
 .container {
   max-width: 1240px;

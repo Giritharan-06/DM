@@ -209,9 +209,6 @@ h2 em {
     inset -7px -10px 14px #061e28,
     inset 5px 6px 14px #78b9be80;
 }
-.hero .scene-star {
-  color: #dda780;
-}
 .hero .scene-ring {
   border-color: #6b949610;
 }
@@ -716,9 +713,6 @@ h2 em {
     inset -7px -10px 14px #889d8360,
     inset 5px 6px 14px #ffffffbb,
     0 12px 18px #4f654d16;
-}
-.scene-star {
-  color: #b39c7c;
 }
 .industry-detail {
   background: #dbe5dc;

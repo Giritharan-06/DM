@@ -8,7 +8,6 @@ import {
   BarChart3,
   Check,
   MessageCircle,
-  Sparkles,
   Plus,
 } from 'lucide-react';
 export function Decor() {
@@ -17,8 +16,6 @@ export function Decor() {
       <i className="orb orb-one" />
       <i className="orb orb-two" />
       <i className="orb orb-three" />
-      <Sparkles className="scene-star star-one" />
-      <Sparkles className="scene-star star-two" />
       <div className="scene-ring" />
     </div>
   );

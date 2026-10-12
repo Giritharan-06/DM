@@ -87,7 +87,7 @@ export function Shell({
         <aside className={`sidebar ${menu ? "open" : ""}`}>
           <div className="sidebar-brand">
             <Link href={`${basePath}/`} className="logo">
-              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={36} height={36} />
+              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={52} height={52} />
               <span>Zyroz Digital</span>
             </Link>
             <span className="workspace-label">AGENCY WORKSPACE</span>

@@ -39,7 +39,7 @@ h3 {
 .site-footer .brand-icon { filter: invert(1); }
 @media (max-width: 760px) {
   .site-nav .logo { font-size: 19px; gap: 7px; }
-  .site-nav .brand-icon { width: 36px; height: 36px; }
+  .site-nav .brand-icon { width: 46px; height: 46px; }
 }
 .logo-mark {
   background: linear-gradient(140deg, #5672ff, #8f42ff);
@@ -236,21 +236,6 @@ h3 {
   height: 48px;
   right: 1%;
   bottom: 4%;
-}
-.scene-star {
-  position: absolute;
-  color: #aa92f8;
-  width: 24px;
-  height: 24px;
-}
-.star-one {
-  left: 4%;
-  bottom: 10%;
-  transform: rotate(15deg);
-}
-.star-two {
-  right: 37%;
-  top: 9%;
 }
 .scene-ring {
   position: absolute;
@@ -1079,9 +1064,6 @@ h3 {
   .scene-ring {
     width: 140px;
     height: 140px;
-  }
-  .scene-star {
-    width: 18px;
   }
   .orb-one {
     width: 50px;
