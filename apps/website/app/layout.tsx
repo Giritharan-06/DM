@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_WEBSITE_URL || 'http://localhost:3000',
   ),
   title: 'Zyroz Digital — Your next chapter of growth',
+  icons: { icon: '/zyroz-mark.png', apple: '/zyroz-mark.png' },
   description:
     'Smart digital marketing for ambitious businesses. Explore strategy, creative, advertising and websites with Zyroz Digital.',
   openGraph: {

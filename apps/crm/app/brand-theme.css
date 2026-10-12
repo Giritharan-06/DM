@@ -15,6 +15,7 @@ body {
   color: #f8f6ef;
 }
 .sidebar-brand .logo { color: #f8f6ef; }
+.sidebar-brand .brand-icon, .auth-brand .brand-icon { filter: invert(1); }
 .workspace-label, .nav-group-label { color: #9ab3b6; }
 .workspace-picker {
   background: #ffffff0e;

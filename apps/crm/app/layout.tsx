@@ -10,6 +10,7 @@ import '@fontsource/plus-jakarta-sans/700.css';
 import { Providers } from '@/components/providers';
 export const metadata: Metadata = {
   title: { default: 'Zyroz Digital Workspace', template: '%s · Zyroz Digital' },
+  icons: { icon: '/zyroz-mark.png', apple: '/zyroz-mark.png' },
   description: 'The connected workspace for your agency.',
   robots: { index: false, follow: false },
 };

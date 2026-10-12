@@ -28,7 +28,7 @@ body {
   gap: 7px;
   white-space: nowrap;
 }
-.sidebar-brand .brand-icon { width: 36px; height: 36px; border-radius: 10px; }
+.sidebar-brand .brand-icon { width: 36px; height: 36px; }
 .logo-mark {
   background: linear-gradient(140deg, #6579ff, #903aff);
   box-shadow:

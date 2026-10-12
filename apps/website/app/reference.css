@@ -36,6 +36,7 @@ h3 {
   white-space: nowrap;
 }
 .footer-grid .logo { display: inline-flex; }
+.site-footer .brand-icon { filter: invert(1); }
 @media (max-width: 760px) {
   .site-nav .logo { font-size: 19px; gap: 7px; }
   .site-nav .brand-icon { width: 36px; height: 36px; }
