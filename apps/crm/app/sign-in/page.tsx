@@ -17,7 +17,7 @@ export default function SignIn() {
           href={websiteUrl}
           className="logo"
         >
-          <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />
+          <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={80} height={80} />
           <span>Zyroz Digital</span>
         </a>
         <div>

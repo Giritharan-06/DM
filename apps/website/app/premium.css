@@ -8,7 +8,7 @@ body {
   color: var(--ink);
 }
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 116px;
 }
 .container {
   max-width: 1340px;
@@ -71,7 +71,7 @@ h2 em {
   border-bottom: 1px solid #e3e2da;
 }
 .site-nav {
-  height: 80px;
+  height: 104px;
 }
 .nav-links {
   font-size: 11px;
@@ -90,7 +90,7 @@ h2 em {
 }
 .scroll-progress {
   background: #ed704b;
-  top: 80px;
+  top: 104px;
   height: 2px;
 }
 .hero {
@@ -1195,13 +1195,13 @@ h2 em {
 }
 @media (max-width: 760px) {
   html {
-    scroll-padding-top: 85px;
+    scroll-padding-top: 108px;
   }
   .section {
     padding: 65px 0;
   }
   .site-nav {
-    height: 73px;
+    height: 96px;
   }
   .site-header {
     padding: 0 20px;
@@ -1217,7 +1217,7 @@ h2 em {
     padding: 9px 13px;
   }
   .scroll-progress {
-    top: 73px;
+    top: 96px;
   }
   .mobile-menu-web {
     display: block;

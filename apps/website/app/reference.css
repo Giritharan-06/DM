@@ -27,7 +27,7 @@ h3 {
   z-index: 10;
 }
 .site-nav {
-  height: 83px;
+  height: 104px;
   border: 0;
 }
 .logo {
@@ -39,7 +39,10 @@ h3 {
 .site-footer .brand-icon { filter: invert(1); }
 @media (max-width: 760px) {
   .site-nav .logo { font-size: 19px; gap: 7px; }
-  .site-nav .brand-icon { width: 46px; height: 46px; }
+  .site-nav .brand-icon { width: 80px; height: 80px; }
+}
+@media (max-width: 520px) {
+  .site-nav .logo span { display: none; }
 }
 .logo-mark {
   background: linear-gradient(140deg, #5672ff, #8f42ff);
@@ -846,7 +849,7 @@ h3 {
     padding: 62px 0;
   }
   .site-nav {
-    height: 72px;
+    height: 96px;
   }
   .hero {
     padding-top: 30px;

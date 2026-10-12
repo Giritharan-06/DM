@@ -136,7 +136,7 @@ export function Landing({ contact }: { contact: WebsiteSettings }) {
       <header className="container site-header">
         <nav className="site-nav" aria-label="Main navigation">
           <Link className="logo" href="/" aria-label="Zyroz Digital home">
-            <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />
+            <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={80} height={80} />
             <span>Zyroz Digital</span>
           </Link>
           <div className="nav-links">

@@ -32,7 +32,7 @@ export function SiteFooter({ contact }: { contact: WebsiteSettings }) {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={60} height={60} />
+              <Image className="brand-icon" src="/zyroz-mark.png" alt="" width={80} height={80} />
               <span>Zyroz Digital</span>
             </Link>
             <p>
